@@ -1,5 +1,7 @@
 // Java program showing how to change the instrument type 
-import javax.sound.midi.*; 
+import javax.sound.midi.*;
+import java.io.*;
+import java.util.*;
 
 public class Test001 { 
    
@@ -11,21 +13,19 @@ public class Test001 {
          sequencer.open();
          
          Sequence seq = new Sequence(Sequence.PPQ, 4);
-         Instrument instr = new Instrument(seq);
-                  
-         instr.addNote(new Note(48, 0, 2));
-         instr.addNote(new Note(55, 0, 2));
-         instr.addNote(new Note(64, 0, 5));
-         instr.addNote(new Note(64, 5, 10));
-         instr.addNote(new Note(62, 0, 4));
          
-         instr.composeTrack();   
+         MidiFileHandler mfh = new MidiFileHandler(seq, new File("ask.mid"));
          
-         sequencer.setSequence(seq); 
+         ArrayList<InstrumentTrack> arrInsTrack = mfh.extractInstrumentTracks();
+         arrInsTrack.get(5).composeTrack();  
+         
+         sequencer.setSequence(seq);
+         
          sequencer.start();
          
          while (true)
          {
+            System.out.println("/s");
             if (!sequencer.isRunning())
             { 
                sequencer.close(); 

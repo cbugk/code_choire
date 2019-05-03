@@ -2,8 +2,8 @@ public class Note {
    //PROPERTIES
    int key;
    int velocity;
-   int startTime;
-   int finishTime;
+   int startTick;
+   int duration;
    
    //CONSTRUCTORS
    public Note()
@@ -11,16 +11,16 @@ public class Note {
       this(60, 0, 10);
    }
    
-   public Note(int key, int startTime, int finishTime)
+   public Note(int key, int startTick, int duration)
    {
-      this(key, startTime, finishTime, 100);
+      this(key, startTick, duration, 100);
    }
    
-   public Note(int key, int startTime, int finishTime,  int velocity) {
+   public Note(int key, int startTick, int duration,  int velocity) {
       this.key = key;
       this.velocity = velocity;
-      this.startTime = startTime;
-      this.finishTime = finishTime;
+      this.startTick = startTick;
+      this.duration = duration;
    }
    
    //METHODS
@@ -36,14 +36,14 @@ public class Note {
       return velocity;
    }
    
-   public int getStartTime()
+   public int getStartTick()
    {
-      return startTime;
+      return startTick;
    }
    
-   public int getFinishTime()
+   public int getDuration()
    {
-      return finishTime;
+      return duration;
    }
    
    //SETTERS   
@@ -57,14 +57,14 @@ public class Note {
       velocity = v;
    }
    
-   public void setStartTime(int t)
+   public void setStartTick(int t)
    {
-      startTime = t;
+      startTick = t;
    }
    
-   public void setFinishTime(int t )
+   public void setDuration(int d )
    {
-      finishTime = t;
+      duration = d;
    }
    
 }
