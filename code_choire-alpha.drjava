@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" main="Main" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="codeChoire/midiCore/InsTrack.java" package="codeChoire.midiCore" timestamp="10-May-2019 06:39:05">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/gui/InsTrackPanel.java" package="codeChoire.gui" timestamp="10-May-2019 22:56:52">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/midiCore/Note.java" package="codeChoire.midiCore" timestamp="10-May-2019 04:47:25">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/midiCore/MidiConductor.java" package="codeChoire.midiCore" timestamp="10-May-2019 07:11:02">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/midiCore/SequencerHandler.java" package="codeChoire.midiCore" timestamp="10-May-2019 17:17:17">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/gui/LabelTimelinePanel.java" package="codeChoire.gui" timestamp="10-May-2019 17:43:01">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="codeChoire/gui/TrackPanel.java" package="codeChoire.gui" timestamp="10-May-2019 18:43:17">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+      <file name="Main.java" package="" timestamp="12-May-2019 01:50:00">
+        <select from="2132" to="2132"/>
+        <scroll column="906" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="codeChoire/"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
